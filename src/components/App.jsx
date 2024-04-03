@@ -47,9 +47,7 @@ const App = () => {
             } else {
                 setImages(prevImages => [...prevImages, ...normalizeData]);
             }
-
-            setError('');
-
+        setError('');
             if (response.data.results.length === 0) {
                 setHasMoreImages(false);
             }
