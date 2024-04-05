@@ -1,4 +1,4 @@
-import { RotatingLines } from 'react-loader-spinner'
+import { Audio  } from 'react-loader-spinner'
 import style from './Loader.module.css'
 
 
@@ -6,7 +6,7 @@ const Loader = () => {
  
       return (
         <div className={style.loaderStyle}>
-            <RotatingLines
+            <Audio 
                 visible={true}
                 height={50}
                 width={50}
