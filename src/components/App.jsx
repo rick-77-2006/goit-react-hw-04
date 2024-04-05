@@ -21,7 +21,7 @@ const App = () => {
     async function fetchImages(query, pageNum) {
         try {
             setLoading(true);
-            const apiKey = '41764579-b97d65b31c0abd4efd9d4830e';
+            const apiKey = 'wmfnsVc_DdNJUYvLvziU9AjLz2nPehfwjBFjdxGMITc';
             const params = {
                 client_id: apiKey,
                 query: query,
@@ -47,7 +47,9 @@ const App = () => {
             } else {
                 setImages(prevImages => [...prevImages, ...normalizeData]);
             }
-        setError('');
+
+            setError('');
+
             if (response.data.results.length === 0) {
                 setHasMoreImages(false);
             }
