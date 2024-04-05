@@ -21,7 +21,7 @@ const App = () => {
     async function fetchImages(query, pageNum) {
         try {
             setLoading(true);
-            // const apiKey = '41764579-b97d65b31c0abd4efd9d4830e';
+            const apiKey = '41764579-b97d65b31c0abd4efd9d4830e';
             const params = {
                 client_id: apiKey,
                 query: query,
