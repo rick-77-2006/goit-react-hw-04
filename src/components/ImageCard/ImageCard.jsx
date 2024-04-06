@@ -1,13 +1,19 @@
-import css from './components/ImageCard/ImageCard.module.css';
+import css from "../ImageCard/ImageCard.module.css";
 
- const ImageCard = ({ imageUrl, alt, onClick }) => {
-   return (
-     <li className={css.card}>
-       <div className={css.container}>
-         <img src={imageUrl} alt={alt} onClick={onClick} width="320" height="200"/>
-       </div>
-     </li>
-   );
- };
+const ImageCard = ({ imageUrl, alt, onClick }) => {
+  return (
+    <li className={css.card}>
+      <div className={css.container}>
+        <img
+          src={imageUrl}
+          alt={alt}
+          onClick={onClick}
+          width="320"
+          height="200"
+        />
+      </div>
+    </li>
+  );
+};
 
- export default ImageCard;
+export default ImageCard;

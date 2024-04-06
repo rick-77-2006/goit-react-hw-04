@@ -1,19 +1,19 @@
-import ImageCard from "./components/ImageCard/ImageCard";
-import css from "./components/ImageGallery/ImageGallery.module.css";
+import ImageCard from '../ImageCard/ImageCard';
+import css from '../ImageGallery/ImageGallery.module.css';
 
-const ImageGallery = ({ images, onClick}) => {
-
-return (
-     <ul className={css.imageGallery}>
-       {images.map((image) => (
-         <ImageCard
-           key={image.id}
-           imageUrl={image.small}
-           alt={image.alt}
-           onClick={() => onClick(image)} />
+const ImageGallery = ({ images, onClick }) => {
+  return (
+    <ul className={css.imageGallery}>
+      {images.map((image) => (
+        <ImageCard
+          key={image.id}
+          imageUrl={image.small}
+          alt={image.alt}
+          onClick={() => onClick(image)}
+        />
       ))}
     </ul>
   );
 };
 
- export default ImageGallery;
+export default ImageGallery;
