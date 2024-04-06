@@ -1,4 +1,4 @@
-import css from '../components/ImageCard/ImageCard.module.css';
+import css from './components/ImageCard/ImageCard.module.css';
 
  const ImageCard = ({ imageUrl, alt, onClick }) => {
    return (
