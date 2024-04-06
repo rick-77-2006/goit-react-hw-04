@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
-import css from "./SearchBar.module.css";
+import css from "./components/SearchBar/SearchBar.module.css";
 import { GoSearch } from "react-icons/go";
 
 const SearchBar = ({ onSubmit }) => {
